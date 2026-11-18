@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the evolution of artificial intelligence through an interactive five-layer timeline pyramid.">
+  <title>AI Timeline Pyramid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="AI Timeline Pyramid home">
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span>AI TIMELINE <b>PYRAMID</b></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#timeline">Explore</a>
+      <a href="#about">About</a>
+      <a href="#legend">Legend</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">A JOURNEY THROUGH MACHINE INTELLIGENCE</p>
+      <h1>Explore the Evolution of <span>Artificial Intelligence</span></h1>
+      <p class="hero-copy">From early questions about thinking machines to the systems shaping our world today — explore the milestones that changed AI.</p>
+      <a class="primary-link" href="#timeline">Explore the pyramid <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="timeline-section" id="timeline">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE BIG PICTURE</p>
+          <h2>Five layers. One evolving field.</h2>
+        </div>
+        <p class="section-note">Select any milestone to open its story.</p>
+      </div>
+
+      <div class="pyramid-wrap">
+        <div class="pyramid" aria-label="Interactive pyramid of artificial intelligence milestones">
+          <section class="pyramid-layer future" aria-labelledby="future-title">
+            <h3 id="future-title">FUTURE AI</h3>
+            <div class="milestone-list">
+              <a class="milestone" href="details.html?id=agi">2030+ — Artificial General Intelligence <span>↗</span></a>
+              <a class="milestone" href="details.html?id=superintelligence">Future — Superintelligence <span>↗</span></a>
+            </div>
+          </section>
+
+          <section class="pyramid-layer generative" aria-labelledby="generative-title">
+            <h3 id="generative-title">GENERATIVE AI &amp; LARGE LANGUAGE MODELS</h3>
+            <div class="milestone-list">
+              <a class="milestone" href="details.html?id=gan">2014 — Generative Adversarial Networks <span>↗</span></a>
+              <a class="milestone" href="details.html?id=transformer">2017 — Transformer architecture <span>↗</span></a>
+              <a class="milestone" href="details.html?id=bert">2018 — BERT <span>↗</span></a>
+              <a class="milestone" href="details.html?id=chatgpt">2022 — ChatGPT <span>↗</span></a>
+              <a class="milestone" href="details.html?id=diffusion">2022 — Diffusion models go mainstream <span>↗</span></a>
+            </div>
+          </section>
+
+          <section class="pyramid-layer machine" aria-labelledby="machine-title">
+            <h3 id="machine-title">MACHINE LEARNING &amp; DEEP LEARNING</h3>
+            <div class="milestone-list">
+              <a class="milestone" href="details.html?id=backprop">1986 — Backpropagation popularised <span>↗</span></a>
+              <a class="milestone" href="details.html?id=deepblue">1997 — Deep Blue defeats Kasparov <span>↗</span></a>
+              <a class="milestone" href="details.html?id=imagenet">2009 — ImageNet dataset introduced <span>↗</span></a>
+              <a class="milestone" href="details.html?id=alexnet">2012 — AlexNet wins ImageNet <span>↗</span></a>
+              <a class="milestone" href="details.html?id=alphago">2016 — AlphaGo defeats Lee Sedol <span>↗</span></a>
+            </div>
+          </section>
+
+          <section class="pyramid-layer symbolic" aria-labelledby="symbolic-title">
+            <h3 id="symbolic-title">SYMBOLIC AI &amp; EXPERT SYSTEMS</h3>
+            <div class="milestone-list">
+              <a class="milestone" href="details.html?id=dartmouth">1956 — Dartmouth workshop <span>↗</span></a>
+              <a class="milestone" href="details.html?id=eliza">1966 — ELIZA chatbot <span>↗</span></a>
+              <a class="milestone" href="details.html?id=expert">1980s — Expert systems expand <span>↗</span></a>
+            </div>
+          </section>
+
+          <section class="pyramid-layer foundations" aria-labelledby="foundations-title">
+            <h3 id="foundations-title">FOUNDATIONS</h3>
+            <div class="milestone-list">
+              <a class="milestone" href="details.html?id=turing">1950 — Turing’s imitation game <span>↗</span></a>
+              <a class="milestone" href="details.html?id=perceptron">1958 — Perceptron introduced <span>↗</span></a>
+              <a class="milestone" href="details.html?id=winters">1970s–1990s — AI winters <span>↗</span></a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="interaction-hint"><span class="hint-dot"></span> Click a milestone to explore what happened and why it matters.</p>
+    </section>
+
+    <section class="legend-section" id="legend">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HOW TO READ THE PYRAMID</p>
+          <h2>Explore the five layers</h2>
+        </div>
+      </div>
+      <div class="legend-grid">
+        <article class="legend-card"><span class="legend-swatch swatch-foundations"></span><div><h3>Foundations</h3><p>Early theories, tests and computational models.</p></div></article>
+        <article class="legend-card"><span class="legend-swatch swatch-symbolic"></span><div><h3>Symbolic AI</h3><p>Rules, logic, knowledge representation and expert systems.</p></div></article>
+        <article class="legend-card"><span class="legend-swatch swatch-machine"></span><div><h3>Machine Learning</h3><p>Systems that learn patterns from data, including deep learning.</p></div></article>
+        <article class="legend-card"><span class="legend-swatch swatch-generative"></span><div><h3>Generative AI &amp; LLMs</h3><p>Models that generate text, images, audio and other content.</p></div></article>
+        <article class="legend-card"><span class="legend-swatch swatch-future"></span><div><h3>Future AI</h3><p>Open research questions and possible future capabilities.</p></div></article>
+      </div>
+    </section>
+
+    <section class="about-strip">
+      <p class="eyebrow">A NOTE ABOUT THE FUTURE</p>
+      <p>Future AI milestones are possibilities and research goals, not confirmed historical achievements. Dates shown for them are illustrative rather than predictions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#top">AI Timeline Pyramid</a>
+    <p>A visual journey through the history and evolution of artificial intelligence.</p>
+    <p class="footer-credit">Created with HTML, CSS &amp; JavaScript</p>
+  </footer>
+</body>
+</html>
